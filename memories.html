@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special</title>
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- font cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--header section starts -->
+    <section class="header">
+        <a href="home.html" class="logo"><div class="message">Il sito fatto apposta per te <span class="heart">♥</span></div></a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+    
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <!-- header section ends -->
+
+    <!-- google section starts -->
+    <section class="google">
+        <div class="search-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo Google">
+            <br>
+            <input type="text" id="search" value=" that girl ! So special. Don't forget " readonly autofocus>
+            <br>
+            <input type="submit" value="Cerca con Google" id="searchButton">
+          
+        </div>
+        <div class="image-container">
+            <img src="C:\\Users\\raffy\\Downloads\\Telegram Desktop\\ila1.jpg" alt="Immagine 1" onclick="zoom(this)"> 
+            <img src="C:\\Users\\raffy\\Downloads\\Telegram Desktop\\ila2.jpg" alt="Immagine 2"onclick="zoom(this)">
+            <img src="C:\\Users\\raffy\\Downloads\\Telegram Desktop\\ila3.jpg" alt="Immagine 3"onclick="zoom(this)">
+            <img src="C:\\Users\\raffy\\Downloads\\Telegram Desktop\\ila4.jpg" alt="Immagine 4"onclick="zoom(this)">
+            <img src="C:\\Users\\raffy\\Downloads\\Telegram Desktop\\ila5.jpg" alt="Immagine 5"onclick="zoom(this)">
+        </div>
+    </section>
+    <div id="overlay" onclick="unzoom()">
+        <img src="">
+    </div>
+    <!-- google section ends -->
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

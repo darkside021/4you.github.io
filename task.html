@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- font cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--header section starts -->
+    <section class="header">
+        <a href="home.html" class="logo"><div class="message">Il sito fatto apposta per te <span class="heart">♥</span></div></a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+  
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <!-- task list section starts -->
+    <section class="task-list">
+        <h2>Obiettivi che hai raggiunto</h2>
+        <ul id="taskList">
+            <!-- Task items will be added here dynamically -->
+        </ul>
+    </section>
+
+    <!-- task input section starts -->
+<div class="input-bar">
+    <input type="text" id="phrase-input" placeholder="Inserisci l'obiettivo raggiunto qui...">
+    <button id="emoji-button">🙂</button>
+    <button id="enter-button">Enter</button>
+</div>
+
+<!-- Selettori per la scelta del colore e della dimensione del testo -->
+<div class="text-options">
+    <label for="color-select">Colore:</label>
+    <select id="color-select">
+        <option value="black">Nero</option>
+        <option value="red">Rosso</option>
+        <option value="green">Verde</option>
+        <!-- ... altri colori ... -->
+    </select>
+    <label for="size-select">Dimensione:</label>
+    <select id="size-select">
+        <option value="12px">12px</option>
+        <option value="14px">14px</option>
+        <option value="16px">16px</option>
+        <!-- ... altre dimensioni ... -->
+    </select>
+</div>
+<!-- Area dove visualizzare la frase inserita -->
+<div id="phrase-display" class="phrase-display"></div>
+
+<!-- Modal per la selezione degli emoji -->
+<div id="emoji-modal" class="emoji-modal">
+    <div class="emoji-modal-content">
+        <span class="close-emoji-modal">&times;</span>
+        <div class="emoji-categories">
+            <!-- Aggiungi qui le categorie di emoji -->
+            <div class="emoji-category">
+                <h2>Faccine</h2>
+                <p>
+                    <span style="font-size: 50px;">😀</span>
+                    <span style="font-size: 50px;">😁</span>
+                    <span style="font-size: 50px;">😂</span>
+                    <span style="font-size: 50px;">😃</span>
+                    <span style="font-size: 50px;">😄</span>
+                    <span style="font-size: 50px;">😅</span>
+                    <span style="font-size: 50px;">😆</span>
+                    <span style="font-size: 50px;">😇</span>
+                    <span style="font-size: 50px;">😈</span>
+                    <span style="font-size: 50px;">😉</span>
+                    <span style="font-size: 50px;">😊</span>
+                    <span style="font-size: 50px;">😋</span>
+                    <span style="font-size: 50px;">😌</span>
+                    <span style="font-size: 50px;">😍</span>
+                    <span style="font-size: 50px;">😎</span>
+                    <span style="font-size: 50px;">😏</span>
+                    <span style="font-size: 50px;">😐</span>
+                    <span style="font-size: 50px;">😑</span>
+                    <span style="font-size: 50px;">😒</span>
+                    <span style="font-size: 50px;">😓</span>
+                    <span style="font-size: 50px;">😔</span>
+                    <span style="font-size: 50px;">😕</span>
+                    <span style="font-size: 50px;">😖</span>
+                    <span style="font-size: 50px;">😗</span>
+                    <span style="font-size: 50px;">😘</span>
+                    <span style="font-size: 50px;">😙</span>
+                    <span style="font-size: 50px;">😚</span>
+                    <span style="font-size: 50px;">😛</span>
+                    <span style="font-size: 50px;">😜</span>
+                    <span style="font-size: 50px;">😝</span>
+                </p>
+            </div>
+            <div class="emoji-category">
+                <h2>Cuori</h2>
+                <p>
+                    <span style="font-size: 50px;">&#10084;</span> <!-- Cuore -->
+                    <span style="font-size: 50px;">&#128156;</span> <!-- Cuore scintillante -->
+                </p>
+            </div>
+            <div class="emoji-category">
+                <h2>Stelle</h2>
+                <p>
+                    <span style="font-size: 50px;">&#11088;</span> <!-- Stelline -->
+                    <span style="font-size: 50px;">&#9733;</span> <!-- Stella -->
+                </p>
+            </div>
+            <div class="emoji-category">
+                <h2>Soli e Lune</h2>
+                <p>
+                    <span style="font-size: 50px;">&#9728;</span> <!-- Sole -->
+                    <span style="font-size: 50px;">&#127769;</span> <!-- Luna piena -->
+                </p>
+            </div>
+        </div>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <body>
+
+</html>
+
